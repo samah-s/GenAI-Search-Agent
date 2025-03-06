@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI Document Search</title>
+    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        /* Button Styling */
+        button {
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: 500;
+            background: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #003f87;
+        }
+        /* Info Section */
+        .info {
+            text-align: left;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .info h2 {
+            font-size: 18px;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .info p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Generative AI Document Search</h1>
+        <p>Explore a vast collection of documents on Generative AI gathered from various sources, demonstrating Google Cloud's Agentic AI Builder.</p>
+        
+        <button id="searchWidgetTrigger">Search Documents</button>
+        
+        <gen-search-widget 
+            configId="659623c1-0c8e-4cfe-8336-abcda5d9509a" 
+            triggerId="searchWidgetTrigger">
+        </gen-search-widget>
+        
+        <div class="info">
+            <h2>About This Search Tool</h2>
+            <p>This AI-powered search tool allows you to efficiently find relevant information on Generative AI. It is designed to help researchers, students, and professionals navigate to the right page from multiple sources.</p>
+            
+            <h2>How It Works</h2>
+            <p>Using Google Cloud's Agentic AI Builder, this tool processes and indexes numerous documents related to Generative AI. With a simple search, you can retrieve valuable insights from academic papers, blogs, and research articles.</p>
+        </div>
+    </div>
+
+</body>
+</html>
